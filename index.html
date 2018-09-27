@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="warp">
+		<ul class="oImg1">
+			<li>
+				<img src="images/1.jpg">
+			</li>
+			<li>
+				<img src="images/2.jpg">
+			</li>
+			<li>
+				<img src="images/3.jpg">
+			</li>
+			<li>
+				<img src="images/4.jpg">
+			</li>
+			<li>
+				<img src="images/5.jpg">
+			</li>
+		</ul>
+		<ul class="img-index">
+		</ul>
+	</div>
+	<div class="warp1">
+		<ul class="oImg2">
+			<li>
+				<img src="images/1.jpg">
+			</li>
+			<li>
+				<img src="images/2.jpg">
+			</li>
+			<li>
+				<img src="images/3.jpg">
+			</li>
+			<li>
+				<img src="images/4.jpg">
+			</li>
+			<li>
+				<img src="images/5.jpg">
+			</li>
+		</ul>
+		<ul class="img-index">
+		</ul>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+	var abb = new Son('oImg1');
+	var add = new Son('oImg2');
+
+	abb.init({
+		event : 'mouseover',
+		time : null,
+		left : '',
+		right : '',
+		changeImg : false,
+	});
+	add.init({
+		event : 'click',
+		time : 2000,
+		left : 'prev',
+		right : 'next',
+		changeImg : true,
+	});
+</script>

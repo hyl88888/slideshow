@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+.warp,.warp1{
+	width: 800px;
+	height: 450px;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+.oImg1,.oImg2{
+	width: 4500px;
+	height: 100%;
+	transition: all 1s;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.oImg1 li,.oImg2 li,.oImg1 li img,.oImg2 li img{
+	width: 850px;
+	height: 450px;
+	float: left;
+}
+.img-index{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 13px;
+}
+.img-index li{
+	width: 20px;
+	height: 20px;
+	color: #FFF;
+	margin: 0 5px;
+	cursor: pointer;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: rgb(0,0,0,0.4);
+}
+.img-index li.active{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.prev,.next{
+	width: 45px;
+	height: 80px;
+    color: #FFF;
+    text-align: center;
+	cursor: pointer;
+    display: none;
+    font: 400 40px/80px '宋体';
+    background-color: rgb(0,0,0,0.5);
+	position: absolute;
+	top: 45%;
+}
+.prev{
+	left: 0;
+}
+.next{
+	right: 0;
+}
